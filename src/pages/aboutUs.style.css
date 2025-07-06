@@ -1,0 +1,71 @@
+.aboutuspage-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 2rem 1rem;
+  min-height: 50vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.aboutUsPage-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  width: 100%;
+  padding: 1.5rem;
+}
+
+.aboutUsPage-section > img,
+.aboutUsPage-section > p {
+  flex: 1;
+  width: 330px;
+  height: 330px;
+  max-width: 50%;
+  height: auto;
+  object-fit: contain;
+  margin: 0;
+  text-align: center;
+}
+
+.col-section {
+  flex-direction: column;
+}
+
+.larger-image {
+  width: 450px !important;
+  height: 450px !important;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .aboutUsPage-section {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .aboutUsPage-section > img,
+  .aboutUsPage-section > p {
+    max-width: 100%; /* Full width on smaller screens */
+  }
+
+  .aboutUsPage-section > img {
+    max-width: 80%; /* Slightly reduce image size on small screens */
+  }
+}
+
+/* Accessibility improvements */
+.aboutUsPage-section > img {
+  alt: ""; /* Always include alt text for accessibility */
+}
+
+/* Animation-friendly styles */
+.aboutUsPage-section > img,
+.aboutUsPage-section > p {
+  will-change: transform, opacity; /* Optimize for animations */
+}

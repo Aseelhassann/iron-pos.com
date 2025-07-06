@@ -1,0 +1,8 @@
+.ant-select,
+.ant-select-selector {
+  background-color: rgba(228, 228, 228, 0.519) !important;
+  border: none !important;
+  border-bottom: 0.8px solid white !important;
+  font-weight: bolder !important;
+  border-radius: 8px !important;
+}

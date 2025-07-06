@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+html[dir="ltr"] {
+  text-align: left;
+}
+
+html[dir="rtl"] {
+  text-align: right;
+}
+
+p {
+  color: rgba(0, 0, 0, 1);
+  font-size: 20px;
+}
+
+.header-text-style {
+  font-weight: bold;
+  color: black;
+  text-shadow: -2px -2px 0 white, 2px -2px 0 white, -2px 2px 0 white,
+    2px 2px 0 white;
+}
+
+h3 {
+  text-transform: uppercase;
+  color: rgba(63, 89, 2, 1);
+  font-size: 35px;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+@media (max-width: 769px) {
+  h3 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.3rem;
+  }
+}

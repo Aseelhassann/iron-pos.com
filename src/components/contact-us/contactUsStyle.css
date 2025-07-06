@@ -1,0 +1,97 @@
+.contact-us-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  width: 80%;
+  margin: auto;
+}
+
+.contact-us-container > h3 {
+  text-transform: uppercase;
+  color: rgba(63, 89, 2, 1);
+  font-size: 40px;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.contact-box {
+  display: flex;
+  padding: 20px 25px;
+  background-color: rgba(217, 217, 217, 0.2);
+  width: 100%;
+  border-radius: 30px;
+  height: 430px;
+  overflow-y: auto;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.contact-box > img {
+  flex: 0.5;
+  object-fit: contain;
+}
+
+.form-container {
+  flex: 0.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 20px;
+  padding: 5px 15px;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  flex: 0.4;
+  color: rgba(141, 141, 141, 1);
+}
+
+.input-container > input,
+textarea {
+  border: none;
+  width: 100%;
+  border-bottom: 1px solid black;
+  background-color: transparent;
+}
+
+.input-container > input:focus {
+  border: none;
+}
+
+.text-area {
+  flex: 1;
+}
+
+.contact-button {
+  width: 150px;
+  align-self: center;
+  height: 50px;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+@media (max-width: 769px) {
+  .contact-us-container > div > h3 {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .form-container {
+    gap: 25px;
+  }
+  .contact-box {
+    flex-direction: column;
+    height: auto;
+  }
+  .form-row {
+    flex-direction: column;
+    gap: 25px;
+  }
+}

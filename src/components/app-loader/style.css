@@ -1,0 +1,22 @@
+/* Fullscreen Loader */
+.app-loader {
+  position: fixed; /* Ensure it covers the entire screen */
+  top: 0;
+  left: 0;
+  width: 100vw; /* Full viewport width */
+  height: 100%; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(73, 103, 1);
+  z-index: 9999999; /* High z-index to ensure it's on top */
+  overflow: hidden; /* Prevent any scroll issues */
+}
+
+.app-logo {
+  width: 150px;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
